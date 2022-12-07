@@ -9,6 +9,7 @@ export const PaperStyle = styled(Paper)`
   width: 100px;
   height: 100px;
   background-color: ${colors.blue};
+  cursor: pointer;
 `;
 
 export const Circle = styled.div<{ $color: string }>`

@@ -1,9 +1,14 @@
 import Cell from './Cell';
 
-const Row = ({ row, playGame }: any) => {
+interface IProps {
+  row: Array<number>;
+  playGame: (cell: number) => void;
+}
+
+const Row = ({ row, playGame }: IProps) => {
   return (
     <tr>
-      {row.map((cell: any, i: any) => (
+      {row.map((cell: number, i: number) => (
         <Cell key={i} value={cell} columnIndex={i} playGame={playGame} />
       ))}
     </tr>
