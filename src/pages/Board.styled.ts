@@ -21,6 +21,7 @@ export const MessageBoardStyle = styled.div`
   width: 720px;
   height: 40px;
   text-align: center;
+  text-shadow: 1px 1px 8px ${colors.white};
   background-color: ${colors.blue};
 `;
 

@@ -3,6 +3,19 @@ import { staticText } from './staticText';
 export const cloneBoard = (board: Array<Array<number>>) =>
   board.map((boardArray: Array<number>) => [...boardArray]);
 
+export const setDiscOnBoard = (
+  boardGame: Array<Array<number>>,
+  currentPlayer: number,
+  cell: number
+) => {
+  for (let row = 5; row >= 0; row--) {
+    if (!boardGame[row][cell]) {
+      boardGame[row][cell] = currentPlayer;
+      break;
+    }
+  }
+};
+
 const checkVertical = (board: Array<Array<number>>) => {
   for (let r = 3; r < 6; r++) {
     for (let c = 0; c < 7; c++) {

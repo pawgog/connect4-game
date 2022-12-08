@@ -1,5 +1,6 @@
 export const staticText = {
   newGame: 'New Game',
+  saveGame: 'Save Game',
   backGame: 'Back Game',
   draw: 'Draw Game!',
   gameOver: 'Game over! Start a new game.',
